@@ -2,7 +2,9 @@
 # PnP SharePoint Starter Kit for Non-Release Tenants
 This is a copy of the PnP-Starter-Kit. This repo will not be maintained nor will I make any new contributions, but will allow you play around with the PnP Starter Kit features (some of them), without having to configure First Release for everyone. This should not be used in your production environments.
 
-## Pre-requirements
+It will provision all of the non-FR functionality of the pnp-starter-kit. It doesn't have Personal Web Parts, DiscussNow, LOB Application, Azure Functions, API Management Requirements. 
+
+## Pre-requirements (Copied from original repo)
 
 Here are current pre-requirements for making this solution work in your tenant.
 
@@ -19,3 +21,6 @@ Here are current pre-requirements for making this solution work in your tenant.
     - This will provision 3 site collections with urls of `/sites/demoportal`, `/sites/demohr`, and `/sites/demomarketing`. Your urls may vary depending on the SitePrefix you use.
 
 > Notice that this script also adds tenant level settings like themes, site designs, taxonomy term sets, and other adjustments. Therefore, it is recommended to test the script in an isolated test tenant and not immediately execute it within your production environment. Nevertheless, a cleanup script will come shortly.
+
+# Finally
+I will re-iterate, this isn't my source code. It was used from the PnP-Starter-Kit in the SharePoint repo. I will not maintain this code, and it should only be deployed into test tenants. However, i have stripped out the webparts (personals,discussnow, lob, API management) from the solution. It will still deploy the demo sites and configure the pages with the webparts on it.
