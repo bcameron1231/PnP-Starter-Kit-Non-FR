@@ -20,7 +20,7 @@ Here are current pre-requirements for making this solution work in your tenant.
 - Move to the `provisioning` folder and execute the following command (using your own tenant url and the prefix of your choosing): `.\deploy.ps1 -TenantUrl https://contosodemosk.sharepoint.com -SitePrefix demo`
     - This will provision 3 site collections with urls of `/sites/demoportal`, `/sites/demohr`, and `/sites/demomarketing`. Your urls may vary depending on the SitePrefix you use.
 
-> Notice that this script also adds tenant level settings like themes, site designs, taxonomy term sets, and other adjustments. Therefore, it is recommended to test the script in an isolated test tenant and not immediately execute it within your production environment. Nevertheless, a cleanup script will come shortly.
+> Notice that this script also adds tenant level settings like themes, site designs, taxonomy term sets, and other adjustments. Therefore, it is recommended to test the script in an isolated test tenant and not immediately execute it within your production environment.
 
 #Deploy just the webparts
 If you are not first release for everyone, you can still deploy just the webparts by uploading the .sppkg file to the app catalog.
