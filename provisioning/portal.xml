@@ -1,10 +1,9 @@
-<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema">
+﻿<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema">
   <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.21.1712.2, Culture=neutral, PublicKeyToken=5e633289e95c321a">
     <pnp:Parameters>
       <pnp:Parameter Key="Company">Contoso</pnp:Parameter>
       <pnp:Parameter Key="WeatherCity">Seattle</pnp:Parameter>
       <pnp:Parameter Key="PortalTitle">PnP SP Starter Kit</pnp:Parameter>
-      <pnp:Parameter Key="StockSymbol">MSFT</pnp:Parameter>
     </pnp:Parameters>
   </pnp:Preferences>
   <pnp:Tenant>
@@ -31,7 +30,6 @@
       <pnp:Navigation>
         <pnp:GlobalNavigation NavigationType="Structural">
           <pnp:StructuralNavigation RemoveExistingNodes="true">
-            <pnp:NavigationNode Title="Personal" Url="SitePages/Personal.aspx"/>
             <pnp:NavigationNode Title="Organization" Url="SitePages/Home.aspx"/>
             <pnp:NavigationNode Title="Departments" Url="" />
           </pnp:StructuralNavigation>
@@ -184,8 +182,6 @@
                 <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{ &quot;autoHide&quot;:true,&quot;height&quot;:56}" Order="2" Column="2" />
                 <!-- Weather -->
                 <pnp:CanvasControl WebPartType="Custom" JsonControlData="{ &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;location&quot;:&quot;{parameter:WeatherCity}&quot;,&quot;unit&quot;:&quot;c&quot;}}" ControlId="0f5615e2-b30f-4bc5-b3d7-2fe335ce13d9" Order="3" Column="2" />
-                <!-- Stocks -->
-                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{ &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;stockSymbol&quot;:&quot;MSFT&quot;,&quot;autoRefresh&quot;:false}}" ControlId="50256fc2-a28f-4544-900e-32724d32bc7f" Order="4" Column="2" />
               </pnp:Controls>
             </pnp:Section>
             <pnp:Section Order="3" Type="ThreeColumn">
@@ -210,35 +206,6 @@
             </pnp:Section>
           </pnp:Sections>
           <pnp:Header Type="None" />
-        </pnp:ClientSidePage>
-        <pnp:ClientSidePage PageName="Personal.aspx" Title="Personal" Layout="Article" PromoteAsNewsArticle="false" Overwrite="true" EnableComments="false" Publish="true">
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/modernOffice_002.jpg" TranslateX="22.0604099244876" TranslateY="49.6428571428571" />
-          <pnp:Sections>
-            <pnp:Section Order="1" Type="ThreeColumn">
-              <pnp:Controls>
-                <!-- personalCalendar -->
-                <pnp:CanvasControl WebPartType="Custom" ControlId="bbcd646e-6b86-4480-a68a-850c98f94519" Order="1" Column="1" />
-                <!-- personalContacts -->
-                <pnp:CanvasControl WebPartType="Custom" ControlId="a95742b9-5e67-4a11-8e51-7a76812a9d60" Order="2" Column="1" />
-                <!-- personalTasks -->
-                <pnp:CanvasControl WebPartType="Custom" ControlId="ee972022-9937-4b69-9c25-eaf77003f4f9" Order="1" Column="2" />
-                <!-- personalEmail -->
-                <pnp:CanvasControl WebPartType="Custom" ControlId="ac41debd-d92c-4de0-9d67-e7bc191030ee" Order="2" Column="2" />
-                <!-- Followed Sites -->
-                <pnp:CanvasControl WebPartType="Custom" ControlId="92d5cc6c-fae5-4e91-9583-ab33950f5a8d" Order="1" Column="3" />
-                <!-- recentlyUsedDocuments -->
-                <pnp:CanvasControl WebPartType="Custom" ControlId="596e3e97-f3ca-4cf9-9b8e-cb852f063356" Order="2" Column="3" />
-                <!-- recentlyVisitedSites -->
-                <pnp:CanvasControl WebPartType="Custom" ControlId="277282d0-debb-42d6-b4b3-30ec543964fd" Order="3" Column="3" />
-              </pnp:Controls>
-            </pnp:Section>
-            <pnp:Section Order="2" Type="OneColumn">
-              <pnp:Controls>
-                <!-- peopleDirectory -->
-                <pnp:CanvasControl WebPartType="Custom" ControlId="d9d6f014-3fd9-4fb9-af54-044c7c43e081" Order="1" Column="1" />
-              </pnp:Controls>
-            </pnp:Section>
-          </pnp:Sections>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage Layout="Article" Overwrite="true" PromoteAsNewsArticle="true" PageName="Meeting-on-Marketing-In-Non-English-Speaking-Markets-This-Friday" Publish="true" Title="Meeting on Marketing In Non-English-Speaking Markets This Friday">
           <pnp:Header ServerRelativeImageUrl="{site}/SiteAssets/MSSurface_Pro4_SMB_Seattle_0578.jpg" Type="Custom" TranslateX="44.4279786603438" TranslateY="28.9285714285714"/>

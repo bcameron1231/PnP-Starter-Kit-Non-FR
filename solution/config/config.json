@@ -26,46 +26,6 @@
         }
       ]
     },
-    "recently-visited-sites-web-part": {
-      "components": [
-        {
-          "entrypoint": "./lib/webparts/recentlyVisitedSites/RecentlyVisitedSitesWebPart.js",
-          "manifest": "./src/webparts/recentlyVisitedSites/RecentlyVisitedSitesWebPart.manifest.json"
-        }
-      ]
-    },
-    "recently-used-documents-web-part": {
-      "components": [
-        {
-          "entrypoint": "./lib/webparts/recentlyUsedDocuments/RecentlyUsedDocumentsWebPart.js",
-          "manifest": "./src/webparts/recentlyUsedDocuments/RecentlyUsedDocumentsWebPart.manifest.json"
-        }
-      ]
-    },
-    "recent-contacts-web-part": {
-      "components": [
-        {
-          "entrypoint": "./lib/webparts/recentContacts/RecentContactsWebPart.js",
-          "manifest": "./src/webparts/recentContacts/RecentContactsWebPart.manifest.json"
-        }
-      ]
-    },
-    "followed-sites-web-part": {
-      "components": [
-        {
-          "entrypoint": "./lib/webparts/followedSites/FollowedSitesWebPart.js",
-          "manifest": "./src/webparts/followedSites/FollowedSitesWebPart.manifest.json"
-        }
-      ]
-    },
-    "stock-information-web-part": {
-      "components": [
-        {
-          "entrypoint": "./lib/webparts/stockInformation/StockInformationWebPart.js",
-          "manifest": "./src/webparts/stockInformation/StockInformationWebPart.manifest.json"
-        }
-      ]
-    },
     "weather-information-web-part": {
       "components": [
         {
@@ -95,38 +55,6 @@
         {
           "entrypoint": "./lib/webparts/worldTime/WorldTimeWebPart.js",
           "manifest": "./src/webparts/worldTime/WorldTimeWebPart.manifest.json"
-        }
-      ]
-    },
-    "personal-email-web-part": {
-      "components": [
-        {
-          "entrypoint": "./lib/webparts/personalEmail/PersonalEmailWebPart.js",
-          "manifest": "./src/webparts/personalEmail/PersonalEmailWebPart.manifest.json"
-        }
-      ]
-    },
-    "personal-calendar-web-part": {
-      "components": [
-        {
-          "entrypoint": "./lib/webparts/personalCalendar/PersonalCalendarWebPart.js",
-          "manifest": "./src/webparts/personalCalendar/PersonalCalendarWebPart.manifest.json"
-        }
-      ]
-    },
-    "personal-tasks-web-part": {
-      "components": [
-        {
-          "entrypoint": "./lib/webparts/personalTasks/PersonalTasksWebPart.js",
-          "manifest": "./src/webparts/personalTasks/PersonalTasksWebPart.manifest.json"
-        }
-      ]
-    },
-    "personal-contacts-web-part": {
-      "components": [
-        {
-          "entrypoint": "./lib/webparts/personalContacts/PersonalContactsWebPart.js",
-          "manifest": "./src/webparts/personalContacts/PersonalContactsWebPart.manifest.json"
         }
       ]
     },
@@ -177,22 +105,6 @@
           "manifest": "./src/extensions/siteClassification/SiteClassificationApplicationCustomizer.manifest.json"
         }
       ]
-    },
-    "lob-integration-web-part": {
-      "components": [
-        {
-          "entrypoint": "./lib/webparts/lobIntegration/LobIntegrationWebPart.js",
-          "manifest": "./src/webparts/lobIntegration/LobIntegrationWebPart.manifest.json"
-        }
-      ]
-    },
-    "discuss-now-command-set": {
-      "components": [
-        {
-          "entrypoint": "./lib/extensions/discussNow/DiscussNowCommandSet.js",
-          "manifest": "./src/extensions/discussNow/DiscussNowCommandSet.manifest.json"
-        }
-      ]
     }
   },
   "externals": {},
@@ -200,29 +112,18 @@
     "BannerWebPartStrings": "lib/webparts/banner/loc/{locale}.js",
     "TilesWebPartStrings": "lib/webparts/tiles/loc/{locale}.js",
     "SiteInformationWebPartStrings": "lib/webparts/siteInformation/loc/{locale}.js",
-    "RecentlyVisitedSitesWebPartStrings": "lib/webparts/recentlyVisitedSites/loc/{locale}.js",
-    "RecentlyUsedDocumentsWebPartStrings": "lib/webparts/recentlyUsedDocuments/loc/{locale}.js",
-    "RecentContactsWebPartStrings": "lib/webparts/recentContacts/loc/{locale}.js",
-    "FollowedSitesWebPartStrings": "lib/webparts/followedSites/loc/{locale}.js",
-    "StockInformationWebPartStrings": "lib/webparts/stockInformation/loc/{locale}.js",
     "WeatherInformationWebPartStrings": "lib/webparts/weatherInformation/loc/{locale}.js",
     "LinksWebPartStrings": "lib/webparts/links/loc/{locale}.js",
     "PeopleDirectoryWebPartStrings": "lib/webparts/peopleDirectory/loc/{locale}.js",
     "WorldTimeWebPartStrings": "lib/webparts/worldTime/loc/{locale}.js",
-    "PersonalEmailWebPartStrings": "lib/webparts/personalEmail/loc/{locale}.js",
-    "PersonalCalendarWebPartStrings": "lib/webparts/personalCalendar/loc/{locale}.js",
-    "PersonalTasksWebPartStrings": "lib/webparts/personalTasks/loc/{locale}.js",
-    "PersonalContactsWebPartStrings": "lib/webparts/personalContacts/loc/{locale}.js",
     "TabPageApplicationCustomizerStrings": "lib/extensions/tabPage/loc/{locale}.js",
     "AlertNotiticationApplicationCustomizerStrings": "lib/extensions/alertNotitication/loc/{locale}.js",
     "RedirectApplicationCustomizerStrings": "lib/extensions/redirect/loc/{locale}.js",
     "PortalFooterApplicationCustomizerStrings": "lib/extensions/portalFooter/loc/{locale}.js",
     "CollabFooterApplicationCustomizerStrings": "lib/extensions/collabFooter/loc/{locale}.js",
     "SiteClassificationApplicationCustomizerStrings": "lib/extensions/siteClassification/loc/{locale}.js",
-    "LobIntegrationWebPartStrings": "lib/webparts/lobIntegration/loc/{locale}.js",
     "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
     "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
-    "MyLinksStrings": "lib/common/myLinks/loc/{locale}.js",
-    "DiscussNowCommandSetStrings": "lib/extensions/discussNow/loc/{locale}.js"
+    "MyLinksStrings": "lib/common/myLinks/loc/{locale}.js"
   }
 }

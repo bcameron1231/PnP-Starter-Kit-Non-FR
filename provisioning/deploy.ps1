@@ -31,13 +31,8 @@ Param(
     [string]$Company = "Contoso",
 
     [Parameter(Mandatory = $false)]
-    [string]$WeatherCity = "Seattle",
+    [string]$WeatherCity = "Seattle"
 
-    [Parameter(Mandatory = $false)]
-    [string]$StockSymbol = "MSFT",
-
-    [Parameter(Mandatory = $false)]
-    [string]$StockAPIKey = ""
 )    
 
 
@@ -87,13 +82,7 @@ $connection = Connect-PnPOnline -Url $SiteUrl[0] -Credentials $Credentials -Retu
 
 if ($SkipSolutionDeployment -ne $true) {
     # Temporary until schema change is present
-    Write-Host "Provisioning solution" -ForegroundColor Cyan
-    $existingApp = Get-PnPApp -Identity "sharepoint-portal-showcase-client-side-solution" -ErrorAction SilentlyContinue
-    if ($existingApp -ne $null) {
-        Remove-PnPApp -Identity $existingApp
-    }
     Apply-PnPProvisioningTemplate -Path "$PSScriptRoot\solution.xml" -Connection $connection
-    Update-AppIfPresent -AppName "sharepoint-portal-showcase-client-side-solution" -Connection $connection
 }
 
 # Disable Quicklaunch for Portal
@@ -114,13 +103,8 @@ if ($isHub -eq $null) {
 }
 $HubSiteId = (Get-PnPSite -Includes Id).Id.ToString()
 
-if ($StockAPIKey -ne $null -and $StockAPIKey -ne "") {
-    Write-Host "Storing Stock API Key in tenant properties"
-    Set-PnPStorageEntity -Key "PnP-Portal-AlphaVantage-API-Key" -Value $StockAPIKey -Comment "API Key for Alpha Advantage REST Stock service" -Description "API Key for Alpha Advantage REST Stock service" -Connection $connection
-}
-
 Write-Host "Applying template to portal" -ForegroundColor Cyan
-Apply-PnPProvisioningTemplate -Path "$PSScriptRoot\portal.xml" -Parameters @{"WeatherCity" = $WeatherCity; "PortalTitle" = "$Company Portal"; "StockSymbol" = $StockSymbol; "HubSiteId" = $HubSiteId; "Company" = $Company} -Connection $connection
+Apply-PnPProvisioningTemplate -Path "$PSScriptRoot\portal.xml" -Parameters @{"WeatherCity" = $WeatherCity; "PortalTitle" = "$Company Portal"; "HubSiteId" = $HubSiteId; "Company" = $Company} -Connection $connection
 Apply-PnPProvisioningTemplate -Path "$PSScriptRoot\PnP-PortalFooter-Links.xml" -Connection $connection
 
 # Due to bug in the provisioning engine reassociate the designs to the correct templates
