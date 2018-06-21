@@ -1,6 +1,6 @@
 
 # PnP SharePoint Starter Kit for Standard Release Tenants
-This is a copy of the PnP-Starter-Kit. This repo will not be maintained nor will I make any new contributions, but will allow you play around with the PnP Starter Kit features (some of them), without having to configure First Release for everyone. This should not be used in your production environments.
+This is a clone of the PnP-Starter-Kit. This repo will not be maintained nor will I make any new contributions, but will allow you play around with the PnP Starter Kit features (some of them), without having to configure First Release for everyone. This should not be used in your production environments.
 
 It will provision all of the non-FR functionality of the pnp-starter-kit. It doesn't have Personal Web Parts, DiscussNow, LOB Application, Azure Functions, API Management Requirements. 
 
