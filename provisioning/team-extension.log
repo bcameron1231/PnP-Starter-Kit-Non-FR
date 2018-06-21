@@ -1,0 +1,23 @@
+2018-06-21T18:15:08.430Z - info:   [12428] *** FOLDER: c:\Users\BeauCameron\GitHub\sp-starter-kit-nonFR\provisioning ***
+2018-06-21T18:15:08.431Z - info:   [12428] VSTSVSCode/1.136.0 (VSCode 1.19.2; Windows_NT 10.0.17134; Node 7.9.0)
+2018-06-21T18:15:08.432Z - debug:  [12428] Looking for an External Context at c:\Users\BeauCameron\GitHub\sp-starter-kit-nonFR\provisioning
+2018-06-21T18:15:08.432Z - debug:  [12428] No External Context at c:\Users\BeauCameron\GitHub\sp-starter-kit-nonFR\provisioning
+2018-06-21T18:15:08.435Z - debug:  [12428] Looking for TFVC repository at c:\Users\BeauCameron\GitHub\sp-starter-kit-nonFR\provisioning
+2018-06-21T18:15:08.436Z - debug:  [12428] TFVC Creating Tfvc object with localPath='undefined'
+2018-06-21T18:15:08.437Z - debug:  [12428] Using TFS proxy: 
+2018-06-21T18:15:08.437Z - debug:  [12428] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\TF.exe'
+2018-06-21T18:15:08.438Z - debug:  [12428] TFVC Repository created with repositoryRootFolder='c:\Users\BeauCameron\GitHub\sp-starter-kit-nonFR\provisioning'
+2018-06-21T18:15:08.439Z - debug:  [12428] TFVC Repository.CheckVersion
+2018-06-21T18:15:08.440Z - debug:  [12428] TFVC: tf add -noprompt -?
+2018-06-21T18:15:08.443Z - debug:  [12428] TFVC: spawned new process (duration: 3ms)
+2018-06-21T18:15:08.447Z - debug:  [12428] TFVC: spawned new process (duration: 4ms)
+2018-06-21T18:15:08.830Z - debug:  [12428] TFVC: add exit code: 0 (duration: 389ms)
+2018-06-21T18:15:08.830Z - debug:  [12428] TFVC Minimum required version: 14.102.0
+2018-06-21T18:15:08.830Z - debug:  [12428] TFVC (TF.exe, TF.cmd) version: 15.129.27509.11
+2018-06-21T18:15:08.830Z - debug:  [12428] TFVC Repository.FindWorkspace with localPath='c:\Users\BeauCameron\GitHub\sp-starter-kit-nonFR\provisioning'
+2018-06-21T18:15:08.831Z - debug:  [12428] TFVC: tf workfold -noprompt c:\Users\BeauCameron\GitHub\sp-starter-kit-nonFR\provisioning
+2018-06-21T18:15:08.834Z - debug:  [12428] TFVC: spawned new process (duration: 2ms)
+2018-06-21T18:15:09.064Z - debug:  [12428] TFVC: workfold exit code: 100 (duration: 233ms)
+2018-06-21T18:15:09.065Z - debug:  [12428] TFVC errors (via stderr): There is no working folder mapping for c:\Users\BeauCameron\GitHub\sp-starter-kit-nonFR\provisioning.
+
+2018-06-21T18:15:09.065Z - error:  [12428] Execution of the TFVC command line failed unexpectedly.
