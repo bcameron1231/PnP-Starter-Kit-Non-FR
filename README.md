@@ -22,5 +22,9 @@ Here are current pre-requirements for making this solution work in your tenant.
 
 > Notice that this script also adds tenant level settings like themes, site designs, taxonomy term sets, and other adjustments. Therefore, it is recommended to test the script in an isolated test tenant and not immediately execute it within your production environment. Nevertheless, a cleanup script will come shortly.
 
+#Deploy just the webparts
+If you are not first release for everyone, you can still deploy just the webparts by uploading the .sppkg file to the app catalog.
+
+
 # Finally
 I will re-iterate, this isn't my source code. It was used from the PnP-Starter-Kit in the SharePoint repo. I will not maintain this code, and it should only be deployed into test tenants. However, i have stripped out the webparts (personals,discussnow, lob, API management) from the solution. It will still deploy the demo sites and configure the pages with the webparts on it.
