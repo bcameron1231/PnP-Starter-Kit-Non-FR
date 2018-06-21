@@ -22,7 +22,7 @@ Here are current pre-requirements for making this solution work in your tenant.
 
 > Notice that this script also adds tenant level settings like themes, site designs, taxonomy term sets, and other adjustments. Therefore, it is recommended to test the script in an isolated test tenant and not immediately execute it within your production environment.
 
-#Deploy just the webparts
+## Deploy Just Web Parts
 If you are not first release for everyone, you can still deploy just the webparts by uploading the .sppkg file to the app catalog.
 
 
